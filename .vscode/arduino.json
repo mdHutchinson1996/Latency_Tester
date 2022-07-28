@@ -1,0 +1,7 @@
+{
+    "sketch": "LatencyTester.cpp",
+    "output": "build",
+    "board": "arduino:avr:uno",
+    "programmer": "arduino:avrisp",
+    "port": "COM6"
+}

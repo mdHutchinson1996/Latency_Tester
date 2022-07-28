@@ -1,0 +1,17 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\variants\\standard"
+  },
+  {
+    "Sourcefile": "c:\\Users\\matth\\OneDrive - University of Prince Edward Island\\XAC Management and Storage\\_Freedom Wing Project\\Latency_Tester\\build\\sketch\\LatencyTester.cpp.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
