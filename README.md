@@ -13,3 +13,5 @@ Both the photosensor and the button should be placed in their respective 3d prin
 The photosensor should have one leg wired to the 5v pin of the arduino. The other leg should be wired to both A0 and gnd.
 The button should be wired on one side to 3.3v. The otherside should be wired to digital pin 2 and gnd.
 
+<img src="/img/Setup1.jpg" width = 500 height = 500/>
+<img src="/img/Setup2.jpg" width = 500 height = 500/>
