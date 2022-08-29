@@ -1,4 +1,3 @@
-#line 1 "c:\\Users\\matth\\OneDrive - University of Prince Edward Island\\XAC Management and Storage\\_Freedom Wing Project\\Latency_Tester\\venv\\Include\\site\\python3.9\\pygame\\scrap.h"
 /*
     pygame - Python Game Library
     Copyright (C) 2006, 2007 Rene Dudfield, Marcus von Appen

@@ -1,4 +1,3 @@
-#line 1 "c:\\Users\\matth\\OneDrive - University of Prince Edward Island\\XAC Management and Storage\\_Freedom Wing Project\\Latency_Tester\\venv\\Include\\site\\python3.9\\pygame\\include\\sse2neon.h"
 #ifndef SSE2NEON_H
 #define SSE2NEON_H
 

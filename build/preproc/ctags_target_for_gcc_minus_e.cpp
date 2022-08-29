@@ -1,43 +1,48 @@
 # 1 "c:\\Users\\matth\\OneDrive - University of Prince Edward Island\\XAC Management and Storage\\_Freedom Wing Project\\Latency_Tester\\LatencyTester.cpp"
 
+//Initialize variables
 int currentLight = 0;
 int pastLight = 0;
 int buttonTime = 0;
 int lightTime = 0;
 int button = 0;
+
 void setup()
 {
- pinMode(A0, 0x0);
-    pinMode(2, 0x2);
+    //setup inputs.
+ pinMode(A0, 0x0); //A0 is for the photosensor
+    pinMode(2, 0x2); //pin 2 is for the button
     pinMode(13, 0x1);
-
     Serial.begin(9600);
 }
 
 void loop()
 {
+    // Read read the current light levels from the photosensor
     pastLight = analogRead(A0);
     currentLight = pastLight;
-    //Serial.println(pastLight);
+    // Read button input
     button = digitalRead(2);
-    //Serial.println(button);
     digitalWrite(13, 0x1);
-    //Serial.println(button);
+    // if the button is pressed
     if(button){
+        //count the time at button press
         buttonTime = millis();
-        //Serial.println("IN IF");
-        while(pastLight + 50 > currentLight){
+        digitalWrite(13, 0x0);
+        //loop until the current light is greater than the past light + 50 (The screen flashes)
+        while(pastLight + 10 > currentLight){
+            // collect the current time
             lightTime = millis();
             currentLight = analogRead(A0);
+            // Simple timeout. If it takes more than 5 seconds for light to flash. break loop
             if((lightTime - buttonTime) > 5000){
-                Serial.println("TIMEOUT");
+                //Serial.println("TIMEOUT");
                 break;
             }
-            //Serial.println(currentLight);
         }
-        //Serial.println("#######");
+        // Print the time it took for the light to come on subtract the time of the button press to get difference between button input and screen output.
         Serial.println(lightTime - buttonTime);
-        digitalWrite(13, 0x0);
+        // Wait 1 second to allow the screen to go back to black
         delay(1000);
     }
 

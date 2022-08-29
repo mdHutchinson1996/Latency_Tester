@@ -27,20 +27,20 @@ void loop()
     if(button){
         //count the time at button press
         buttonTime = millis();
+        digitalWrite(LED_BUILTIN, LOW);
         //loop until the current light is greater than the past light + 50 (The screen flashes)
-        while(pastLight + 50 > currentLight){
+        while(pastLight + 10 > currentLight){
             // collect the current time
             lightTime = millis();
             currentLight = analogRead(A0);
             // Simple timeout. If it takes more than 5 seconds for light to flash. break loop
             if((lightTime - buttonTime) > 5000){
-                Serial.println("TIMEOUT");
+                //Serial.println("TIMEOUT");
                 break;
             }
         }
         // Print the time it took for the light to come on subtract the time of the button press to get difference between button input and screen output.
         Serial.println(lightTime - buttonTime);  
-        digitalWrite(LED_BUILTIN, LOW);
         // Wait 1 second to allow the screen to go back to black
         delay(1000);
     }

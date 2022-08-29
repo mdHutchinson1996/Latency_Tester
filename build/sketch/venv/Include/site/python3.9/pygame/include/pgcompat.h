@@ -1,4 +1,3 @@
-#line 1 "c:\\Users\\matth\\OneDrive - University of Prince Edward Island\\XAC Management and Storage\\_Freedom Wing Project\\Latency_Tester\\venv\\Include\\site\\python3.9\\pygame\\include\\pgcompat.h"
 /* Python 2.x/3.x and SDL compatibility tools
  */
 

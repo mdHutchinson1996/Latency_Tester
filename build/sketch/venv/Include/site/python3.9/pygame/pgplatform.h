@@ -1,4 +1,3 @@
-#line 1 "c:\\Users\\matth\\OneDrive - University of Prince Edward Island\\XAC Management and Storage\\_Freedom Wing Project\\Latency_Tester\\venv\\Include\\site\\python3.9\\pygame\\pgplatform.h"
 /* platform/compiler adjustments (internal) */
 #ifndef PG_PLATFORM_INTERNAL_H
 #define PG_PLATFORM_INTERNAL_H
